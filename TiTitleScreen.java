@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TiTitleScreen extends World
 {
-    Label titleLabel = new Label("The Elephant", 60);
+    Label titleLabel = new Label("The Elephant", 70);
     /**
      * Constructor for objects of class TiTitleScreen.
      * 
@@ -18,7 +18,7 @@ public class TiTitleScreen extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
 
-        addObject(titleLabel, 200, 80);
+        addObject(titleLabel, 220, 80);
         prepare();
     }
 
@@ -42,7 +42,7 @@ public class TiTitleScreen extends World
     private void prepare()
     {
         Elephant elephant = new Elephant();
-        addObject(elephant,486,130);
+        addObject(elephant,495,130);
         Label label = new Label("Press  <space> to Start", 40);
         addObject(label,312,310);
         getClass();
