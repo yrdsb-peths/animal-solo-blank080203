@@ -17,7 +17,9 @@ public class TiTitleScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-
+        GreenfootImage bg = new GreenfootImage("resized.png");
+        bg.scale(getWidth(), getHeight());
+        setBackground(bg);
         addObject(titleLabel, 220, 80);
         prepare();
     }
@@ -45,7 +47,6 @@ public class TiTitleScreen extends World
         addObject(elephant,495,130);
         Label label = new Label("Press  <space> to Start", 40);
         addObject(label,312,310);
-        getClass();
         Label label2 = new Label("Use \u2190 and \u2192 to Move", 40);
         addObject(label2,309,240);
     }
